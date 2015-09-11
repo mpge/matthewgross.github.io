@@ -15,6 +15,19 @@ body {
   text-align: center;
 }
 
+#container .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#container .transition {
+  display: block;
+  position: relative;
+}
+
 #container .transition > div {
   display: none;
 }
