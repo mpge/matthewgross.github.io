@@ -12,6 +12,7 @@ body {
   display: none;
   width: 100%;
   margin: auto auto;
+  text-align: center;
 }
 
 #container .transition > div {
