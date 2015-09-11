@@ -6,31 +6,30 @@
   </head>
   <body>
     <div id="container">
-      <div id="header">
-        <div id="top">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#projects">Projects</a></li>
-            <li><a href="/#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div id="intro">
-          <div id="intro-title">
-            
-          </div>
-          <div id="intro-subtitle">
-            Full Stack Web Developer / Entrepreneurish Type.
-          </div>
-        </div>
+      <div class="slide1">
+          <div class="transition1">Hey!</div>
+          <div class="transition2">My name is Matt.</div>
       </div>
-      <div id="content">
-        <div class="section">
-          <a name="about"></a>
-          <h2>Hey, my name is Matt!</h2>
-          <p>I primary work on Websites, but my experience range is across the board. Having worked on all platforms and with many different languages, my focus is on <strong>adaptability</strong></strong></p>
-        </div>
+      <div class="slide2">
+          <div class="transition1">
+              <p>I'm a software developer with an entrepreneurial spririt to boot!<br />
+              I primarily focus on web and mobile apps... <strong>implementing functionality with passion</strong></p>
+              <button id="switchToTransition3">Check out my Projects!</button>
+              <button id="switchToTransition4">Interested in working with me?</button>
+          </div>
       </div>
     </div>
+    <script type="text/javascript">
+      $(function() {
+          $('.slide1 > div').hide();
+          $('.slide1').fadeIn();
+          setTimeout(function() {
+            $('.slide1 .transition1').fadeIn();
+            setTimeout(function() {
+              $('.slide1 .transition2').fadeIn();
+            }, 500);
+          }, 1000);
+      });
+    </script>
   </body>
 </html>
