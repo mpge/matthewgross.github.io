@@ -18,3 +18,9 @@ body {
 #container .transition > div {
   display: none;
 }
+
+/* Specifics */
+#container .slide1 {
+  width: 50%;
+  text-align: center;
+}
