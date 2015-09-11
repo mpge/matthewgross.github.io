@@ -4,7 +4,7 @@
   margin: auto auto;
 }
 
-#container .transition {
+#container .transition, #container .slide {
   display: none;
   width: 100%;
   margin: auto auto;
